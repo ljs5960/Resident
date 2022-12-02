@@ -1,6 +1,6 @@
-package com.nhnacadmey.resident.config;
+package com.nhnacademy.resident.config;
 
-import com.nhnacadmey.resident.Base;
+import com.nhnacademy.resident.Base;
 import javax.sql.DataSource;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.context.annotation.Bean;
@@ -15,11 +15,10 @@ public class RootConfig {
     @Bean
     public DataSource dataSource() {
         BasicDataSource dataSource = new BasicDataSource();
-        dataSource.setDriverClassName("org.h2.Driver");
-        dataSource.setUrl("jdbc:h2:~/spring-jpa;DATABASE_TO_UPPER=false;"
-            + "INIT=RUNSCRIPT FROM 'classpath:/script/schema.sql'");
-        dataSource.setUsername("sa");
-        dataSource.setPassword("");
+        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
+        dataSource.setUrl("jdbc:mysql://133.186.151.141:3306/nhn_academy_40");
+        dataSource.setUsername("nhn_academy_40");
+        dataSource.setPassword("J/_-W7)ZYB4URo0B");
 
         dataSource.setInitialSize(10);
         dataSource.setMaxTotal(10);
@@ -34,5 +33,4 @@ public class RootConfig {
 
         return dataSource;
     }
-
 }

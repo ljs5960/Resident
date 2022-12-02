@@ -1,0 +1,14 @@
+GET /resident/1
+Host: localhost:8080
+Content-Type: application/json
+
+###
+
+POST /residents HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+"id": "nhn",
+"password": "academy"
+}

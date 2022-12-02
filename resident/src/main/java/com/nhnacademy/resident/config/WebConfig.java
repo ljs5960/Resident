@@ -1,6 +1,6 @@
-package com.nhnacadmey.resident.config;
+package com.nhnacademy.resident.config;
 
-import com.nhnacadmey.resident.controller.ControllerBase;
+import com.nhnacademy.resident.controller.ControllerBase;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
